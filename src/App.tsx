@@ -1,6 +1,6 @@
 import MainContent from "./components/MainContent";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <MainContent />

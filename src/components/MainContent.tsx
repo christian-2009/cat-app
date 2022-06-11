@@ -65,7 +65,7 @@ export default function MainContent(): JSX.Element {
 
   async function handleFavourites(id: string) {
     try {
-      const res = await axios.post(
+       await axios.post(
         "https://api.thecatapi.com/v1/favourites",
         { image_id: id },
         headers
@@ -75,10 +75,9 @@ export default function MainContent(): JSX.Element {
     }
     setToggle(!toggle);
   }
-  console.log("this is data otuside", favourites);
 
   const shortFavourites = favourites
-    .slice(Math.max(0, favourites.length - 10))
+    .slice(Math.max(0, favourites.length - 15))
     .reverse();
   return (
     <>
@@ -89,12 +88,12 @@ export default function MainContent(): JSX.Element {
           <br />
           {shortFavourites.map((cat) => (
             <div key={cat.id}>
-              <img className="favourite-cat-image" src={cat.image.url}></img>
+              <img alt = 'favourite cat' className="favourite-cat-image" src={cat.image.url}></img>
             </div>
           ))}
         </div>
         <div className="cat-image-container">
-          <img className="cat-image" src={cat.url}></img>
+          <img alt = 'cat' className="cat-image" src={cat.url}></img>
           <div className="button-container">
             <button className="cat-get-button" onClick={handleNewCat}>
               New Cat
