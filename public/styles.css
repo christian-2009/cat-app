@@ -1,0 +1,108 @@
+body {
+    background-color:rgb(249, 249, 136) ;
+    font-family: 'Permanent Market', 'cursive';
+    margin:0;
+}
+
+
+.cat-image {
+    width:600px;
+    height:600px;
+    margin: 0 auto;
+    border-radius:50%;
+    border: solid white 10px;
+    object-fit: cover;
+    
+}
+
+.cat-container {
+    display:flex;
+    flex-direction: row;
+    /* border: solid blue; */
+}
+
+.cat-image-container {
+    display:flex;
+    flex-direction: column;
+    /* border: solid red; */
+    width: 45%;
+}
+
+.cat-favourites-container{
+    /* border: red solid; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width:70%;
+    margin-left:10px;
+}
+
+
+.cat-get-button {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 27px;
+    border:none;
+    border-radius: 5px;
+    padding:5px 7px;
+    background-color:#90F1EF ;
+    color: white;
+    font-family:'Permanent Marker'
+}
+
+.cat-get-button:hover{
+    background-color: #56A3A6 ;
+}
+
+.app-title {
+    font-family: 'Permanent Marker';
+    text-align: center;
+    font-size:80px;
+    color: white;
+    background-color: #90F1EF;
+    margin-top: 0;
+}
+
+.button-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cat-favourite-button{
+    font-size:30px;
+    background-color: rgb(240, 42, 42);
+    border: none;
+    border-radius:5px;
+    margin-left:5px;
+    padding:5px;
+  
+
+}
+
+.cat-favourite-button:hover{
+    background-color: rgb(176, 46, 46); ;
+}
+
+.favourite-cat-image {
+    width:200px;
+    height:200px;
+    margin:10px 10px;
+    border-radius:10px;
+    border:white solid 3px;
+    object-fit:cover;
+}
+
+.favourites-title{
+
+    width:100%;
+    text-align: center;
+    font-family: 'Permanent Marker';
+    font-size:60px;
+    color: #90F1EF;
+    margin-top:-10px;
+    margin-bottom:-1px;
+}

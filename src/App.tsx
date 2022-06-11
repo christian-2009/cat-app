@@ -1,7 +1,9 @@
-function App() {
+import MainContent from "./components/MainContent";
+
+function App(): JSX.Element {
   return (
     <div>
-      <h1> Hello</h1>
+      <MainContent />
     </div>
   );
 }
