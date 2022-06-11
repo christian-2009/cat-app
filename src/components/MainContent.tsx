@@ -65,7 +65,7 @@ export default function MainContent(): JSX.Element {
 
   async function handleFavourites(id: string) {
     try {
-       await axios.post(
+      await axios.post(
         "https://api.thecatapi.com/v1/favourites",
         { image_id: id },
         headers
@@ -88,12 +88,16 @@ export default function MainContent(): JSX.Element {
           <br />
           {shortFavourites.map((cat) => (
             <div key={cat.id}>
-              <img alt = 'favourite cat' className="favourite-cat-image" src={cat.image.url}></img>
+              <img
+                alt="favourite cat"
+                className="favourite-cat-image"
+                src={cat.image.url}
+              ></img>
             </div>
           ))}
         </div>
         <div className="cat-image-container">
-          <img alt = 'cat' className="cat-image" src={cat.url}></img>
+          <img alt="cat" className="cat-image" src={cat.url}></img>
           <div className="button-container">
             <button className="cat-get-button" onClick={handleNewCat}>
               New Cat
